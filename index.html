@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/prism.css" />
+    <title>Explorando HTML e CSS: Fundamentos e Práticas Avançadas</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="text-center mt-10 text-bold">
+        Explorando HTML e CSS: Fundamentos e Práticas Avançadas
+      </h1>
+      <div class="mt-20">
+        <p class="text-bold">1. Fundamentos de HTML e CSS:</p>
+        <p class="text-semi-bold">
+          - Introdução ao HTML: Estrutura básica, tags e elementos fundamentais.
+        </p>
+        <div class="code-view">
+          <div class="view-head">
+            <p class="text-regular">HTML</p>
+          </div>
+          <div class="view-body">
+            <pre class="language-html">
+                        <code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;exemplo basico&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    
+    &lt;/body&gt;
+&lt;/html&gt; 
+                        </code>
+                    </pre>
+          </div>
+        </div>
+      </div>
+      <div class="mt-20">
+        <p class="text-semi-bold">
+          - Conceitos básicos de CSS: Seletores, propriedades, valores e regras
+          de estilo.
+        </p>
+        <p class="text-light mt-10">Seletores:</p>
+        <p class="text-thin mt-8">
+          São padrões que indicam quais elementos HTML serão estilizados. Podem
+          ser simples, como selecionar todos os elementos de um tipo (p para
+          parágrafos), ou mais complexos, como selecionar elementos com certas
+          classes ( .classe) ou IDs (#id).
+        </p>
+
+        <p class="text-light mt-10">Propriedades:</p>
+        <p class="text-thin mt-8">
+          São características que podem ser modificadas para alterar a aparência
+          ou comportamento dos elementos HTML. Exemplos incluem color (cor do
+          texto), font-size (tamanho da fonte) e margin (espaçamento externo).
+        </p>
+        <p class="text-light mt-10">Valores:</p>
+        <p class="text-thin mt-8">
+          São os dados que definem como uma propriedade será aplicada. Por
+          exemplo, para a propriedade color, um valor pode ser uma cor
+          específica (red, #00ff00, etc.) ou uma palavra-chave (inherit,
+          initial, unset).
+        </p>
+        <p class="text-light mt-10">Regras de estilo:</p>
+        <p class="text-thin mt-8">
+          São combinações de seletores e declarações de propriedades e valores
+          que definem como os elementos HTML devem ser estilizados. Por exemplo,
+          a regra p { color: blue; } aplica a cor azul a todos os parágrafos no
+          documento.
+        </p>
+      </div>
+      <div class="mt-20">
+        <p class="text-semi-bold">
+          - Estruturação e formatação de conteúdo usando HTML e CSS.
+        </p>
+        <p class="text-light mt-10">
+          Estruturação e formatação de conteúdo usando HTML e CSS
+        </p>
+        <p class="text-thin mt-8">
+          O HTML é usado para estruturar o conteúdo de uma página web,
+          dividindo-o em elementos como &lt;div&gt;, &lt;p&gt;, &lt;header&gt;,
+          &lt;footer&gt;, entre outros. Esses elementos são organizados em uma
+          hierarquia, onde alguns elementos são filhos de outros, definindo a
+          relação entre eles e criando uma estrutura coerente para o conteúdo.
+        </p>
+        <p class="text-light mt-10">Formatação com CSS:</p>
+        <p class="text-thin mt-8">
+          O CSS é utilizado para aplicar estilos visuais ao conteúdo HTML. Isso
+          inclui definir cores, fontes, tamanhos, margens, espaçamentos e outros
+          aspectos de design. As regras de estilo em CSS são aplicadas aos
+          elementos HTML por meio de seletores e declarações de propriedades e
+          valores, permitindo personalizar a aparência e o layout da página de
+          acordo com as necessidades do projeto.
+        </p>
+        <p class="text-light mt-10">Layout Responsivo:</p>
+        <p class="text-thin mt-8">
+          Além da formatação básica, o CSS também permite criar layouts
+          responsivos, ou seja, que se ajustam automaticamente a diferentes
+          tamanhos de tela, como em dispositivos móveis. Isso é feito usando
+          técnicas como media queries, flexbox e grid layout, garantindo uma
+          experiência de usuário consistente e agradável em diferentes
+          dispositivos.
+        </p>
+      </div>
+      <div class="mt-20">
+        <p class="text-bold">2. Layouts e Posicionamento:</p>
+        <div class="mt-10">
+          <div class="code-view">
+            <div class="view-head">
+              <p class="text-regular">Exemplos</p>
+            </div>
+            <div class="view-body">
+              <pre class="language-css">
+                        <code class="language-css">
+.margin {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+.border {
+    border-top: 1px;
+    border-bottom: 2px;
+    border-left: 5px;
+    border-right: 1px;
+} 
+.padding {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.position {
+    position: relative;
+    /*position: [relative, absolute, static, fixed, sticky]*/
+}  
+                        </code>
+                    </pre>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10">
+          <p class="text-semi-bold">- Técnicas de layout</p>
+          <p class="text-light">Grid</p>
+          <div class="mt-8">
+            <div class="parent">
+              <div class="div1">1</div>
+              <div class="div2">2</div>
+              <div class="div3">3</div>
+              <div class="div4">4</div>
+            </div>
+          </div>
+          <div class="code-view mt-10">
+            <div class="view-head">
+              <p class="text-regular">Grid Css</p>
+            </div>
+            <div class="view-body">
+              <pre class="language-css">
+                          <code class="language-css">
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+    background-color: var(--primary);
+    height: 80px;
+    color: var(--white);
+    text-align: center;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+    background-color: var(--primary);
+    height: 80px;
+    color: var(--white);
+    text-align: center;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+    background-color: var(--primary);
+    height: 80px;
+    color: var(--white);
+    text-align: center;
+}
+.div4 {
+  grid-area: 1 / 4 / 2 / 5;
+    background-color: var(--primary);
+    height: 80px;
+    color: var(--white);
+    text-align: center;
+}  
+                          </code>
+                      </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10">
+        <p class="text-light">Flex</p>
+        <div class="mt-8">
+          <div class="flex">
+            <div class="child-flex">1</div>
+            <div class="child-flex">2</div>
+            <div class="child-flex">3</div>
+            <div class="child-flex">4</div>
+          </div>
+        </div>
+        <div class="code-view mt-10">
+          <div class="view-head">
+            <p class="text-regular">Flex Css</p>
+          </div>
+          <div class="view-body">
+            <pre class="language-css margin-0">
+                        <code class="language-css margin-0">
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+                        </code>
+                    </pre>
+          </div>
+        </div>
+      </div>
+      <div class="mt-20">
+        <p class="text-bold">Responsividade e Design Adaptativo</p>
+        <p class="text-semi-bold mt-20">-Introdução ao Design Responsivo</p>
+        <p class="text-light">Media Queries:</p>
+        <p class="text-thin">
+          São regras CSS que permitem aplicar estilos com base nas
+          características do dispositivo, como largura da tela, altura,
+          orientação e resolução.
+        </p>
+        <p class="text-light">Breakpoints:</p>
+        <p class="text-thin">
+          São pontos específicos na largura da tela em que o layout do site muda
+          para se ajustar ao dispositivo. Por exemplo, definir breakpoints em
+          768px para tablets e 1024px para desktops.
+        </p>
+        <p class="text-semi-bold mt-20">
+          Estratégias para Criação de Layouts Responsivos e Adaptativos
+        </p>
+        <p class="text-light">Layouts Fluidos:</p>
+        <p class="text-thin">
+          Utilizam unidades relativas como porcentagens ou 'em' para dimensionar
+          elementos, o que permite que se ajustem conforme a largura da tela.
+        </p>
+        <p class="text-light">Grid Systems:</p>
+        <p class="text-thin">
+          Utilizar sistemas de grid como Bootstrap, CSS Grid ou Flexbox para
+          organizar o conteúdo de forma flexível e adaptativa.
+        </p>
+        <p class="text-light">Imagens Responsivas:</p>
+        <p class="text-thin">
+          Utilizar max-width: 100%; height: auto; para garantir que as imagens
+          se ajustem ao tamanho da tela sem distorção.
+        </p>
+        <p class="text-semi-bold mt-20">Prós, Contras e Melhores Práticas</p>
+        <p class="text-light">Prós do Design Responsivo</p>
+        <p class="text-thin">
+          Melhora a experiência do usuário em dispositivos móveis e desktops.
+          Facilita a manutenção do site, pois um único conjunto de código se
+          adapta a vários dispositivos.
+        </p>
+        <p class="text-light">Contras do Design Responsivo</p>
+        <p class="text-thin">
+          Pode exigir mais planejamento e testes para garantir a adaptabilidade
+          em diferentes dispositivos. Alguns layouts complexos podem ser
+          desafiadores de implementar de forma responsiva.
+        </p>
+        <p class="text-light">Melhores Práticas</p>
+        <p class="text-thin">
+          Priorizar conteúdo essencial para dispositivos menores. Testar o
+          design em vários dispositivos e tamanhos de tela. Utilizar imagens
+          otimizadas para carregamento mais rápido em dispositivos móveis.
+        </p>
+      </div>
+      <div class="mt-20">
+        <p class="text-bold mt-20">Estilização Avançada com CSS</p>
+        <p class="text-light">
+          Utilização de Pseudo-classes e Pseudo-elementos para estilização
+          específica.
+        </p>
+        <p class="text-thin">
+          - Pseudo-classes são usadas para aplicar estilos a elementos em
+          estados específicos, como :hover para hover, :focus para foco e
+          :active para clique ativo.
+        </p>
+        <p class="text-thin">
+          - Pseudo-elementos permitem estilizar partes específicas de um
+          elemento, como ::before para conteúdo antes do elemento e ::after para
+          conteúdo depois do elemento.
+        </p>
+
+        <p class="text-light">
+          Animações e Transições CSS: Criando interações dinâmicas e visualmente
+          atraentes.
+        </p>
+        <p class="text-thin">
+          - Transições CSS permitem suavizar mudanças de estilo ao longo do
+          tempo, como transições de cor, tamanho e posição. Exemplo: transition:
+          property duration timing-function delay;
+        </p>
+        <p class="text-thin">
+          - Animações CSS são mais complexas e permitem criar movimentos mais
+          elaborados e interativos. Exemplo: @keyframes animationName { from { }
+          to { } }
+        </p>
+
+        <p class="text-light">
+          Tipografia Avançada: Fontes personalizadas, unidades de medida e
+          hierarquia tipográfica.
+        </p>
+        <p class="text-thin">
+          - Fontes Personalizadas: Utilize a propriedade @font-face para
+          incorporar fontes personalizadas em seu site.
+        </p>
+        <p class="text-thin">
+          - Unidades de Medida: Além de px, utilize unidades como em, rem, %,
+          vw, vh para criar layouts mais flexíveis e responsivos.
+        </p>
+        <p class="text-thin">
+          - Hierarquia Tipográfica: Defina diferentes estilos de fonte, tamanhos
+          e pesos para criar uma hierarquia clara e visualmente agradável.
+        </p>
+      </div>
+      <div class="mt-20">
+        <p class="text-bold mt-20">Otimização e Boas Práticas</p>
+        <p class="text-light">Otimização de Performance:</p>
+        <p class="text-thin">
+          - Minificação: Reduz o tamanho de arquivos CSS, JavaScript e HTML
+          removendo espaços em branco, comentários e outras redundâncias.
+        </p>
+        <p class="text-thin">
+          - Concatenação: Combina vários arquivos CSS ou JavaScript em um único
+          arquivo para reduzir o número de solicitações HTTP.
+        </p>
+        <p class="text-thin">
+          - Carregamento Assíncrono: Utilize a tag <link /> com o atributo
+          rel="preload" para carregar recursos CSS de forma assíncrona e
+          melhorar o tempo de carregamento da página.
+        </p>
+
+        <p class="text-light">Acessibilidade Web:</p>
+        <p class="text-thin">
+          - Princípios: Seguir as diretrizes do WCAG (Web Content Accessibility
+          Guidelines) para garantir que o conteúdo seja acessível a todos os
+          usuários.
+        </p>
+        <p class="text-thin">
+          - Práticas: Utilize atributos alt em imagens, forneça descrições
+          claras e concisas, garanta que o contraste de cores seja suficiente
+          para leitura, utilize marcação semântica adequada (por exemplo, nav,
+          header, footer), e teste a acessibilidade com ferramentas como
+          Lighthouse.
+        </p>
+
+        <p class="text-light">Validação de Código:</p>
+        <p class="text-thin">
+          - HTML: Utilize validadores HTML para verificar a sintaxe correta do
+          código, como o W3C Markup Validation Service.
+        </p>
+        <p class="text-thin">
+          - CSS: Verifique a validade do CSS e evite erros de sintaxe usando
+          validadores como o W3C CSS Validation Service.
+        </p>
+        <p class="text-thin">
+          - JavaScript: Utilize linters como ESLint para identificar e corrigir
+          problemas de código JavaScript, como erros de sintaxe e boas práticas
+          de codificação.
+        </p>
+      </div>
+      <div class="mt-30">
+        <p class="text-bold">Referencias</p>
+        <a href="https://www.w3schools.com/html/html_intro.asp">https://www.w3schools.com/html/html_intro.asp</a>
+        <br>
+        <a href="https://www.w3schools.com/css/css_intro.asp">https://www.w3schools.com/css/css_intro.asp</a>
+        <br>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout">https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout</a>
+        <br>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox">https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox</a>
+        <br>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_media_queries/Using_media_queries">https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_media_queries/Using_media_queries</a>
+        <br>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout">https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout</a>
+        <br>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Attribute_selectors">https://developer.mozilla.org/pt-BR/docs/Web/CSS/Attribute_selectors</a>
+    </div>
+    </section>
+    <script src="assets/js/prism.js"></script>
+  </body>
+</html>
